@@ -31,6 +31,11 @@ public class UsersApiFeatureTest {
         userRepository.deleteAll();
     }
 
+    @After
+    public void tearDown() {
+        userRepository.deleteAll();
+    }
+
     @Test
     public void shouldAllowFullCrudForAUser() throws Exception {
         User firstUser = new User(
@@ -110,8 +115,4 @@ public class UsersApiFeatureTest {
                 .statusCode(is(200));
     }
 
-    @After
-    public void tearDown() {
-        userRepository.deleteAll();
-    }
 }
