@@ -1,0 +1,135 @@
+18:28:29.725 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:+HeapDumpOnOutOfMemoryError, -Xmx1024m, -Dfile.encoding=UTF-8, -Duser.country, -Duser.language=en, -Duser.variant]
+18:28:31.928 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=ef7b72b8-cbdb-4bd9-af80-c359454ffd82,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/eureka-server/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+18:28:31.968 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
+18:28:31.972 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+18:28:31.975 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+18:28:31.978 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.20.0.2
+18:28:31.982 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface eth0
+18:28:31.985 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+18:28:31.988 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+18:28:31.991 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? false
+18:28:31.993 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+18:28:32.000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [1bf4daee-f634-4b86-94d6-3e3aa4c9a97b port:40361, addresses:[/127.0.0.1]].
+18:28:32.016 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Thu Mar 22 18:28:32 GMT 2018, with address: [1bf4daee-f634-4b86-94d6-3e3aa4c9a97b port:40361, addresses:[/127.0.0.1]]
+18:28:32.019 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [1bf4daee-f634-4b86-94d6-3e3aa4c9a97b port:40361, addresses:[/127.0.0.1]]
+18:28:32.022 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=ef7b72b8-cbdb-4bd9-af80-c359454ffd82,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/eureka-server/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+18:28:32.026 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [1bf4daee-f634-4b86-94d6-3e3aa4c9a97b port:40361, addresses:[/127.0.0.1]], context: DefaultDaemonContext[uid=ef7b72b8-cbdb-4bd9-af80-c359454ffd82,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/eureka-server/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+18:28:32.068 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+18:28:32.132 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+18:28:34.401 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+18:28:34.443 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+18:28:34.454 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+18:28:34.493 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+18:28:34.508 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+18:28:34.512 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+18:28:34.521 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:48878 to /127.0.0.1:40361.
+18:28:34.888 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received class org.gradle.launcher.daemon.protocol.Build
+18:28:34.892 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 14: Received non-IO message from client: Build{id=5a511eb6-2645-4794-888a-135d4dcba6c9.1, currentDir=/eureka-server}
+18:28:34.895 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=5a511eb6-2645-4794-888a-135d4dcba6c9.1, currentDir=/eureka-server}.
+18:28:34.898 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=5a511eb6-2645-4794-888a-135d4dcba6c9.1, currentDir=/eureka-server} with connection: socket connection from /127.0.0.1:40361 to /127.0.0.1:48878.
+18:28:34.913 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=5a511eb6-2645-4794-888a-135d4dcba6c9.1, currentDir=/eureka-server}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:40361 to /127.0.0.1:48878] after 0.0 minutes of idle
+18:28:34.915 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [1bf4daee-f634-4b86-94d6-3e3aa4c9a97b port:40361, addresses:[/127.0.0.1]]
+18:28:34.926 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [1bf4daee-f634-4b86-94d6-3e3aa4c9a97b port:40361, addresses:[/127.0.0.1]]
+18:28:34.940 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+18:28:35.016 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+18:28:35.146 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+18:28:35.151 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+18:28:35.154 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+18:28:35.157 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=5a511eb6-2645-4794-888a-135d4dcba6c9.1, currentDir=/eureka-server}. Dispatching build started information...
+18:28:35.160 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+18:28:35.190 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin, JAVA_JCE=unlimited, SPRING_PROFILES_ACTIVE=dev, JAVA_HOME=/opt/jdk, OLDPWD=/eureka-server, GLIBC_VERSION=2.27-r0, LANG=C.UTF-8, JAVA_VERSION_MAJOR=8, GRADLE_USER_HOME=cache, HOSTNAME=904d673a1004, GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc, JAVA_VERSION_MINOR=162, PWD=/eureka-server, JAVA_PACKAGE=jdk, JAVA_VERSION_BUILD=12, HOME=/root, SHLVL=1}
+18:28:35.246 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received class org.gradle.launcher.daemon.protocol.CloseInput
+18:28:35.251 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 14: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@30eb46b1
+18:28:35.581 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+18:28:35.586 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 33). The daemon log file: /eureka-server/cache/daemon/4.5.1/daemon-33.out.log
+18:28:35.592 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 954.7 MB]
+18:28:35.596 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+18:28:35.984 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+18:28:35.648 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+18:28:35.999 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=ef7b72b8-cbdb-4bd9-af80-c359454ffd82,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/eureka-server/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-gradle-plugin/2.0.0.RELEASE/spring-boot-gradle-plugin-2.0.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-tools/2.0.0.RELEASE/spring-boot-tools-2.0.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/2.0.0.RELEASE/spring-boot-parent-2.0.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/2.0.0.RELEASE/spring-boot-dependencies-2.0.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.9.4/jackson-bom-2.9.4.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/30/oss-parent-30.pom
+Download https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.22.Final/netty-bom-4.1.22.Final.pom
+Download https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Bismuth-SR7/reactor-bom-Bismuth-SR7.pom
+Download https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.10.0/log4j-bom-2.10.0.pom
+Download https://repo.maven.apache.org/maven2/org/apache/logging/logging-parent/1/logging-parent-1.pom
+Download https://repo.maven.apache.org/maven2/org/apache/apache/18/apache-18.pom
+Download https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.8.v20171121/jetty-bom-9.4.8.v20171121.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.0.4.RELEASE/spring-framework-bom-5.0.4.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Kay-SR5/spring-data-releasetrain-Kay-SR5.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.0.5.RELEASE/spring-data-build-2.0.5.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/5.0.3.RELEASE/spring-integration-bom-5.0.3.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/5.0.3.RELEASE/spring-security-bom-5.0.3.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/session/spring-session-bom/Apple-SR1/spring-session-bom-Apple-SR1.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/2.0.0.RELEASE/spring-boot-loader-tools-2.0.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/io/spring/gradle/dependency-management-plugin/1.0.4.RELEASE/dependency-management-plugin-1.0.4.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.14/commons-compress-1.14.pom
+Download https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/42/commons-parent-42.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Bismuth-SR6/reactor-bom-Bismuth-SR6.pom
+Download https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.21.Final/netty-bom-4.1.21.Final.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.0.4.RELEASE/spring-jcl-5.0.4.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/2.0.0.RELEASE/spring-boot-loader-tools-2.0.0.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-gradle-plugin/2.0.0.RELEASE/spring-boot-gradle-plugin-2.0.0.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/io/spring/gradle/dependency-management-plugin/1.0.4.RELEASE/dependency-management-plugin-1.0.4.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.0.4.RELEASE/spring-jcl-5.0.4.RELEASE.jar
+:compileJava
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix/1.4.0.RELEASE/spring-cloud-netflix-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-build/1.3.6.RELEASE/spring-cloud-build-1.3.6.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-build-dependencies/1.3.6.RELEASE/spring-cloud-build-dependencies-1.3.6.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/1.5.8.RELEASE/spring-boot-dependencies-1.5.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.8.10/jackson-bom-2.8.10.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/27/oss-parent-27.pom
+Download https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.7/log4j-bom-2.7.pom
+Download https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/4.3.12.RELEASE/spring-framework-bom-4.3.12.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Ingalls-SR8/spring-data-releasetrain-Ingalls-SR8.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/1.9.8.RELEASE/spring-data-build-1.9.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/4.3.12.RELEASE/spring-integration-bom-4.3.12.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/4.2.3.RELEASE/spring-security-bom-4.2.3.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-dependencies/1.4.0.RELEASE/spring-cloud-netflix-dependencies-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-dependencies-parent/1.3.6.RELEASE/spring-cloud-dependencies-parent-1.3.6.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons-dependencies/1.3.0.RELEASE/spring-cloud-commons-dependencies-1.3.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config-dependencies/1.4.0.RELEASE/spring-cloud-config-dependencies-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-stream-dependencies/Ditmars.RELEASE/spring-cloud-stream-dependencies-Ditmars.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-dependencies-parent/1.3.5.RELEASE/spring-cloud-dependencies-parent-1.3.5.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-contract-dependencies/1.1.2.RELEASE/spring-cloud-contract-dependencies-1.1.2.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-dependencies-parent/1.3.3.RELEASE/spring-cloud-dependencies-parent-1.3.3.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-eureka-server/1.4.0.RELEASE/spring-cloud-starter-eureka-server-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/1.5.8.RELEASE/spring-boot-starter-1.5.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starters/1.5.8.RELEASE/spring-boot-starters-1.5.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.5.8.RELEASE/spring-boot-parent-1.5.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.5.8.RELEASE/spring-boot-starter-logging-1.5.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/1.5.8.RELEASE/spring-boot-1.5.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.5.8.RELEASE/spring-boot-autoconfigure-1.5.8.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/1.4.0.RELEASE/spring-cloud-starter-netflix-eureka-server-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix/1.4.0.RELEASE/spring-cloud-starter-netflix-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.1.11/logback-parent-1.1.11.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+Download https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/34/commons-parent-34.pom
+Download https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/1.4.0.RELEASE/spring-cloud-starter-netflix-archaius-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/1.3.0.RELEASE/spring-cloud-starter-1.3.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons-parent/1.3.0.RELEASE/spring-cloud-commons-parent-1.3.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/1.4.0.RELEASE/spring-cloud-starter-netflix-ribbon-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-eureka/2.2.4/ribbon-eureka-2.2.4.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-server/1.4.0.RELEASE/spring-cloud-netflix-eureka-server-1.4.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE.pom
