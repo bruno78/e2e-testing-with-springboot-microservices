@@ -37,4 +37,5 @@ dependencies {
 	compile 'org.flywaydb:flyway-core'
 
 	runtime 'org.postgresql:postgresql'
+
 }

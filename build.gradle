@@ -43,6 +43,7 @@ dependencies {
 
 	runtime 'org.postgresql:postgresql'
 	runtime 'org.springframework.boot:spring-boot-devtools'
+
 }
 
 task waitForUsersAPI(type: Exec) {
@@ -50,12 +51,5 @@ task waitForUsersAPI(type: Exec) {
 }
 
 test {
-	dependsOn cleanTest
 	dependsOn waitForUsersAPI
-
-	testLogging {
-		exceptionFormat "full"
-		events "skipped", "passed", "failed"
-		displayGranularity 2
-	}
 }
